@@ -62,7 +62,7 @@ public abstract class AbstractBenchmarkState {
         System.out.println("Loading" + dataset);
         ZipRealDataRetriever dataRetriever = new ZipRealDataRetriever(dataset);
 
-        return Lists.newArrayList(dataRetriever.fetchBitPositions());
+        return dataRetriever.fetchBitPositions();
       }
     });
 

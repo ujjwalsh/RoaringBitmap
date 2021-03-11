@@ -50,7 +50,7 @@ public abstract class RoaringOnlyBenchmarkState {
       public List<int[]> call() throws Exception {
         System.out.println("Loading" + dataset);
         ZipRealDataRetriever dataRetriever = new ZipRealDataRetriever(dataset);
-        return Lists.newArrayList(dataRetriever.fetchBitPositions());
+        return dataRetriever.fetchBitPositions();
       }
     });
 
